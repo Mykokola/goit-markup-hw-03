@@ -1,0 +1,151 @@
+body{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+:root {
+    --logo-web-color: #4D5AE5;
+    --header-menu-link: #2E2F42;
+    --header-menu-addres: #434455;
+    --title-def-color: #2E2F42;
+}
+.logo{
+    text-decoration:none;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:black;
+}
+.logo-web{
+    color: var(--logo-web-color);
+}
+.header-menu-items , .header-address-items ,
+ .our-features-section-items, .what-are-items,
+ .our-team-section-items,.filer-items ,
+ .cards-content-item{
+    list-style-type: none;
+} 
+/* також міг запесати це як (ul{ list-style-type: none; }) але незна як буде правильно */
+.header-menu-link{
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--header-menu-link);
+     text-decoration:none;
+    font-family: 'Roboto';
+     font-style: normal;
+}
+.header-addres-link{
+    letter-spacing: 0.02em;
+    color: var( --header-menu-addres);
+    text-decoration:none;
+    font-family: 'Roboto';
+     font-style: normal;
+}
+.effective-solution-section-title{
+    color:white;
+    font-size: 56px;
+    line-height: 1.12;
+    background-color:var(--title-def-color);
+}
+.effective-solution-button{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    background:  var(--logo-web-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    border-radius: 4px;
+    color:white;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+}
+.our-team-section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+}
+.our-features-item-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.our-features-item-p{
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.our-features-section--title{
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-def-color);
+}
+.what-are--title{
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-def-color);
+}
+
+.our-team-section-items-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-def-color);
+}
+.our-team-section-items-p{
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.footer{
+    background-color:var(--title-def-color);
+}
+.footer-p{
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+.filter-item-all{
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 12px 24px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 69px;
+    height: 48px;
+    font-family: 'Roboto';
+    line-height: 1.5;
+}
+.filter-item{
+    font-family: 'Roboto';
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
+    letter-spacing: 0.04em;
+    color:  var(--logo-web-color);
+    line-height: 1.5;
+}
+.cards-cont-title{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--title-def-color);
+}
+.cards-cont-p{
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color:#434455;
+}
