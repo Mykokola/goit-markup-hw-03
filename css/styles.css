@@ -5,6 +5,24 @@ body{
     margin: 0;
     padding: 0;
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+.list{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
 .title{
     font-family: 'Roboto';
     font-style: normal;
@@ -24,6 +42,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:black;
+    margin-right: 77px;
 }
 .logo-web{
     color: var(--logo-web-color);
@@ -34,7 +53,10 @@ body{
  .cards-content-item{
     list-style-type: none;
 } 
-/* також міг запесати це як (ul{ list-style-type: none; }) але незна як буде правильно */
+
+.header-menu-items{
+    display: flex;
+}
 .header-menu-link{
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -43,12 +65,36 @@ body{
     font-family: 'Roboto';
      font-style: normal;
 }
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.header-menu-item{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-menu-items .header-menu-item + .header-menu-item {
+    margin-left: 40px;
+}
 .header-addres-link{
     letter-spacing: 0.02em;
     color: var( --header-menu-addres);
     text-decoration:none;
     font-family: 'Roboto';
      font-style: normal;
+}
+.header-address-items .header-addres-item + .header-addres-item{
+    margin-left: 40px;
+}
+.header-address-items{
+    display: flex;
+}
+.header-addres-nav {
+    margin-left: auto;
+}
+.effective-solution-section{
+    text-align: center;
 }
 .effective-solution-section-title{
     color:white;
@@ -74,8 +120,21 @@ body{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    padding-top: 120px;
+    text-align: center;
+}
+.our-features-section-items{
+    display: flex;
+}
+.our-fetures-item{
+    width: calc((100% - 96px)/4);
+    margin-right: 24px;
+}
+.our-fetures-item:nth-child(4n){
+    margin-right: 0;
 }
 .our-features-item-title{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -86,24 +145,61 @@ body{
 }
 
 .our-features-section--title{
+    margin-bottom: 120px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-def-color);
 }
 .what-are--title{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--title-def-color);
 }
+.what-are-items{
+    display: flex;
+}
+.what-are-item{
+    width: calc((100% - 96px)/3);
+    margin-right: 24px;
+}
 
+.what-are-item:nth-child(3n){
+    margin-right: 0;
+}
 .our-team-section-items-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-def-color);
+}
+.our-team-cart-txt{
+    text-align: center;
+    padding: 32px 16px 32px 16px;
+    background-color:#FFFFFF;
+}
+.our-team-section-item{
+    width: calc((100% - 96px)/4);
+    margin-right: 24px;
+}
+.our-team-section-item:nth-child(4n){
+    margin-right: 0;
+}
+.our-team-section-img{
+    display: block;
+    width: 100%;
+}
+.our-team-section-items{
+    display: flex;
+}
+.our-tema-background{
+    background:#F4F4FD;
+    margin-top: 120px;
 }
 .our-team-section-items-p{
     letter-spacing: 0.02em;
@@ -148,4 +244,17 @@ body{
     line-height: 24px;
     letter-spacing: 0.02em;
     color:#434455;
+}
+.filer-items{
+    margin-top: 96px;
+}
+.cards-content-item{
+    margin-top: 48px;
+}
+.cards-content-items .cards-content-item:first-child{
+    margin-top: 72px;
+    display: flex;
+}
+.cards-content-under{
+    margin: 16px 32px;
 }
