@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 0;
 }
 .container{
-    width: 1200px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   
@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5,h6,p{
      text-decoration:none;
     font-family: 'Roboto';
      font-style: normal;
+     line-height: 1.5;
 }
 .main-nav{
     display: flex;
@@ -85,7 +86,9 @@ h1,h2,h3,h4,h5,h6,p{
     text-decoration:none;
     font-family: 'Roboto';
      font-style: normal;
-}
+     line-height: 1.5;
+     font-weight: 400;
+    }
 .header-address-items .header-addres-item + .header-addres-item{
     margin-left: 40px;
 }
@@ -97,12 +100,17 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .effective-solution-section{
     text-align: center;
+    background-color:var(--title-def-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .effective-solution-section-title{
     color:white;
     font-size: 56px;
     line-height: 1.12;
-    background-color:var(--title-def-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 494px;
 }
 .effective-solution-button{
     outline: none;
@@ -117,6 +125,7 @@ h1,h2,h3,h4,h5,h6,p{
     color:white;
     letter-spacing: 0.04em;
     line-height: 1.5;
+    margin-top: 48px;
 }
 .our-team-section-title{
     font-weight: 700;
@@ -128,9 +137,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .our-features-section-items{
     display: flex;
+    margin-top: 120px;
 }
 .our-fetures-item{
-    width: calc((100% - 96px)/4);
+    width: calc((100% - 72px)/4);
     margin-right: 24px;
 }
 .our-fetures-item:nth-child(4n){
@@ -143,7 +153,11 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.2;
 }
 .our-features-item-p{
-    letter-spacing: 0.02em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    
     color: #434455;
 }
 
@@ -156,7 +170,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .what-are--title{
     text-align: center;
-    margin-top: 120px;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -167,7 +180,7 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
 }
 .what-are-item{
-    width: calc((100% - 96px)/3);
+    width: calc((100% - 48px)/3);
     margin-right: 24px;
 }
 
@@ -189,6 +202,8 @@ h1,h2,h3,h4,h5,h6,p{
 .our-team-section-item{
     width: calc((100% - 96px)/4);
     margin-right: 24px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .our-team-section-item:nth-child(4n){
     margin-right: 0;
@@ -197,27 +212,34 @@ h1,h2,h3,h4,h5,h6,p{
     display: block;
     width: 100%;
 }
+.what-are-we-doing-section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
 .our-team-section-items{
     display: flex;
     padding-bottom: 120px;
 }
 .our-tema-background{
     background:#F4F4FD;
-    margin-top: 120px;
 }
 .our-team-section-items-p{
     letter-spacing: 0.02em;
     color: #434455;
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 .footer{
     background-color:var(--title-def-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-p{
     letter-spacing: 0.02em;
     color: #E7E9FC;
     margin-top: 16px;
     width: calc((100% - 96px)/4);
-    padding-bottom: 100px;
 }
 .filter-item-all{
     background: #404BBF;
@@ -255,10 +277,14 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.02em;
     color:#434455;
 }
+.filter-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .filer-items{
-    margin-top: 96px;
     text-align: center;
     list-style: none;
+    margin-bottom: 72px;
 }
 .filter-item-li{
     display: inline-block;
@@ -269,23 +295,24 @@ h1,h2,h3,h4,h5,h6,p{
 .cards-content-item{
     margin-top: 48px;
     display: flex;
-    width: calc((100% - 93px)/3);
+    width: calc((100% - 48px)/3);
 }
 .cards-content-items .cards-content-item:first-child{
-    margin-top: 72px;
+    margin-top: 0;
 }
 .cards-cart-item{
     margin-right: 24px;
     display: inline-block;
+    border: 1px solid #E7E9FC;
+
 }
 .cards-cart-item:last-child{
     margin-right: 0;
 }   
 .cards-content-under{
-    margin: 16px 32px;
+    padding: 16px 32px;
 }
 .footer-logo{
    display: inline-block;
    color:#F4F4FD;
-   margin-top: 100px;
 }
