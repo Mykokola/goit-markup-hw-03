@@ -283,6 +283,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 24px;
     letter-spacing: 0.02em;
     color:#434455;
+    margin-top: 8px;
 }
 .filter-section{
     padding-top: 96px;
